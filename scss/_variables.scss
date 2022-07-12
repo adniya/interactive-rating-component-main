@@ -1,0 +1,9 @@
+$bg-color: hsl(216, 12%, 8%);
+$bg-card:  hsl(213, 19%, 18%);
+$bg-star:rgba(64, 70, 77, 0.7);
+$bg-orange: hsl(25, 97%, 53%);
+@mixin center {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }

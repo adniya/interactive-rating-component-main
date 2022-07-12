@@ -1,0 +1,151 @@
+@import "variables";
+@import "config";
+@import "breakpoints";
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  background: $bg-color;
+  font-family: "Overpass", sans-serif;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  @include center;
+  overflow: hidden;
+  padding: 0 1rem;
+
+
+  #card {
+    height: 55vh;
+    min-width: 19rem;
+    background: $bg-card;
+    border-radius: 1rem;
+    color: white;
+    padding: 2rem;
+    @include breakpoint(large) {
+      max-width: 25rem;
+      height: 55vh auto;
+    }
+    @include breakpoint(medium) {
+      max-width: 25rem;
+      height: fit-content;
+    }
+    @include breakpoint(xlarge) {
+      height: fit-content;
+    }
+    .text2 {
+      text-align: center;
+    }
+    .edit {
+      display: block;
+      margin: auto;
+      height: 7rem;
+      width: 10rem;
+    }
+
+    &__star {
+      height: 2.6rem;
+      width: 2.6rem;
+      background: $bg-star;
+      @include center;
+      border-radius: 50%;
+    }
+    .text {
+      height: 10rem;
+      width: 100%;
+      padding: 1rem 0;
+      display: block;
+
+      p {
+        text-align: left;
+        font-size: 15px;
+        color: hsl(216, 12%, 54%);
+      }
+    }
+
+    &__btn {
+      display: block;
+      height: 5rem;
+      width: 100%;
+      margin: auto;
+    }
+    .rating-btn{
+      display: inline;
+      border: none;
+      color: hsl(216, 12%, 54%);
+      font-size: 15px;
+      margin: 0 0.34rem;
+      &:hover {
+        background: $bg-orange;
+        color: white;
+      }
+
+      @include breakpoint(medium) {
+        margin: 0 0.6rem;
+      }
+    }
+
+    .submit-btn{
+      height: 2.8rem;
+      width: 100%;
+      border-radius: 3rem;
+      border: none;
+      font-size: 15px;
+      letter-spacing: 2px;
+      background: $bg-orange;
+      margin-top: 1rem;
+      & > a {
+        text-decoration: none;
+        color: white;
+      }
+
+      &:hover {
+        background: white;
+        & > a {
+          color: $bg-orange;
+        }
+      }
+    }
+  }
+  .card_thank{
+    height: 55vh;
+    min-width: 19rem;
+    background: $bg-card;
+    border-radius: 1rem;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    @include breakpoint(large) {
+      max-width: 25rem;
+      height: 55vh auto;
+    }
+    @include breakpoint(medium) {
+      max-width: 25rem;
+      height: fit-content;
+    }
+    @include breakpoint(xlarge) {
+      height: fit-content;
+    }
+
+    .msg {
+      padding: 0.5rem 0.5rem 0.5rem 1rem;
+      color: $bg-orange;
+      height: 2rem;
+      width: 80%;
+      background: $bg-star;
+      border-radius: 1rem;
+      margin: 2rem auto 1rem auto;
+    }
+  }
+  .hide {
+    display: none;
+  }
+  .active {
+    background-color: $light-grey;
+    color: $white;
+
+}
+}
