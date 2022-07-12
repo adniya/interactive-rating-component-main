@@ -26,7 +26,7 @@ Users should be able to:
 ![desktop-thank-you-state](./images/desktop-thank-you-state.jpg)
 
 ### Links
-- Live Site URL: [live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live site URL here](https://incredible-squirrel-74b08e.netlify.app/)
 
 
 
